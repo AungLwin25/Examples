@@ -1,0 +1,17 @@
+---
+title: "Freeman Pg 284"
+output: html_document
+date: "2023-08-16"
+---
+
+```{r plot_example, echo = FALSE}
+library("ggplot2") 
+
+# Plot of college education vs. poverty rates in the Midwest
+ggplot(data = midwest) +
+  geom_point(
+    mapping = aes(x = percollege, y = percadultpoverty, color = state)
+  ) +
+  scale_color_brewer(palette = "Set3")
+```
+
